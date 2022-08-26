@@ -1,0 +1,507 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  background-color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  color: orangered;
+  border-bottom: 3px solid orangered;
+  /* border: 3px solid yellow; */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid pink; */
+}
+
+.header a {
+  text-decoration: none;
+
+}
+
+.index {
+  color: black;
+  font-weight: bold;
+}
+
+.sobrenos{
+  color: black;
+  font-weight: bold;
+}
+
+.cadastro {
+  color: white;
+  padding: 6px;
+  background-color: orangered;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.login{
+  color: white;
+  padding: 6px;
+  background-color: orangered;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.logo {
+  width: 170px;
+}
+
+.agora {
+  font-weight: 800;
+}
+
+.navbar {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  color: orangered;
+  /* border: 3px solid green; */
+}
+
+/* BANNER */
+
+.banner {
+  height: 500px;
+  color: white;
+  /* border: 3px solid yellow; */
+  background-image: url("../assets/imgs/bola-de-basquete-no-chão-do-ginásio-madeira-basquetebol-deitada-com-marcação-branca-arena-ou-salão-esportes-interior-quadras-229301956.png");
+  background-size: cover;
+  
+}
+
+.banner .container {
+  /* border: 3px solid green; */
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.banner p {
+  /* border: 3px solid cyan; */
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  font-size: 36px;
+  margin-left: 350px;
+}
+
+.banner span {
+  font-weight: 800;
+}
+
+/* missao visao valores */
+
+.social {
+  background-color: #e5e5e5;
+  /* border: 3px solid yellowgreen; */
+  padding: 50px 0;
+}
+
+.social .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* border: 3px solid blue; */
+}
+
+/* usar este bloco para explicar margin e padding*/
+.social .titulo {
+  /* border: 3px solid pink; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.social h2 {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  color: orangered;
+  margin: 0;
+  /* border: 3px solid orange; */
+}
+
+.boxes1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: center;
+  /* border: 3px solid yellow; */
+}
+
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 33%;
+  
+}
+
+
+.boxes2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-align: center;
+  /* border: 3px solid yellow; */
+}
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 33%;
+ 
+}
+
+
+.boxes3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: center;
+  /* border: 3px solid yellow; */
+}
+
+.box3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 33%;
+  
+}
+
+.boxes4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-align: center;
+  /* border: 3px solid yellow; */
+}
+
+.box4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 33%;
+  
+}
+
+.boxes5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: center;
+  /* border: 3px solid yellow; */
+}
+
+.box5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 33%;
+  
+}
+
+
+.social .box1 img {
+  width: 150px;
+  align-self: center;
+}
+
+.social .box2 img {
+  width: 150px;
+  align-self: center;
+}
+
+.social .box3 img {
+  width: 150px;
+  align-self: center;
+}
+.social .box4 img {
+  width: 150px;
+  align-self: center;
+}
+
+.social .box5 img {
+  width: 150px;
+  align-self: center;
+}
+.social .box1 h4 {
+  color: orangered;
+  margin-top: 30px;
+}
+
+.social .box2 h4 {
+  color: orangered;
+  margin-top: 30px;
+}
+.social .box3 h4 {
+  color: orangered;
+  margin-top: 30px;
+}
+
+.social .box4 h4 {
+  color: orangered;
+  margin-top: 30px;
+}
+.social .box5 h4 {
+  color: orangered;
+  margin-top: 30px;
+}
+/* FOOTER */
+
+.footer1 {
+  background-color:orangered;
+  height: 150px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer1 .container {
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* LOGIN */
+
+.banner-login {
+  color: white;
+  height: 700px;
+  /* border: 3px solid yellow; */
+  background-image: url("../assets/imgs/wallpaperbetter.com_2560x1080.jpg");
+  background-size: cover;
+}
+
+.banner-login .container {
+  height: 550px;
+  /* border: 3px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-login {
+  color: orangered;
+}
+
+.banner-login .card {
+  background-color: white;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius:  5px;
+  opacity: 0.8;
+}
+
+.banner-login a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner-login #div_erros_login {
+  margin-top: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* FORMULARIO */
+
+input {
+  height: 30px;
+  border: 2px solid orangered;
+  border-radius: 10px;
+}
+
+select {
+  height: 30px;
+  border: 2px solid orangered;
+  border-radius: 10px;
+}
+
+.btn {
+  font-family: "Exo 2", sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: white;
+  background-color: orangered;
+  width: 120px;
+  align-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.loading-div {
+  width: 50px;
+  /* border: 3px solid pink; */
+  margin: auto;
+  display: none;
+}
+
+.loading-div img {
+  height: 50px;
+  width: 50px;
+}
+
+/* PAGINA DOS GRÁFICOS */
+
+.janela {
+  display: flex;
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.header-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: 3px solid orangered;
+  background-color:white;
+  /* border: 3px solid pink; */
+}
+
+.dash-right {
+  display: flex;
+  width: 75%;
+  height: fit-content;
+  background-color: white;
+  position: relative;
+  top: 0;
+  left: 25%;
+}
+
+.header-left h1 {
+  color: orangered;
+}
+
+.hello {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hello h3 {
+  color: #e3b062;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hello h3 span {
+  font-weight: 800;
+}
+
+.btn-nav {
+  width: 40%;
+  color: white;
+  background-color: orangered;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.btn-nav-white {
+  background-color: orangered;
+  width: 40%;
+  border: 3px solid orangered;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2% 5%;
+}
+
+.btn-nav-white h3 {
+  color:white;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-nav h3,
+.btn-logout h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-logout {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #32b9cd;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+/* pagina extra - simulador */
+.simulador {
+  color: black;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hoopers | Página Inicial</title>
+
+    <script src="./js/funcoes.js"></script>
+
+    <link rel="icon" href="../public/assets/imgs/boladebasquete.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="https://images.squarespace-cdn.com/content/v1/5f217fac8e24187c674282cd/1611423587824-YMOUUJ5NSNHOGPPDDPCG/logocores.jpg?format=1500w" alt="">
+            <ul class="navbar">
+                <li class="agora">Inicial</li>
+                <li>
+                    <a class="sobrenos" href="./simulador.html">Sobre nós</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a class="login" href="./login.html">Login</a>
+                </li>
+                <li>
+                    <a class="cadastro" href="./cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <p>
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="container">
+
+            <div class="titulo">
+                <h2>Regras do Basquete</h2>
+            </div>
+            <div class="boxes1"></div>
+                <div class="box1">
+                    <img src="" alt="1º Regra">
+                    <h4>1º Regra</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            <div class="boxes2">
+                <div class="box2">
+                    <img src="" alt="2º Regra">
+                    <h4>2º Regra</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="boxes3">
+                <div class="box3">
+                    <img src="" alt="3º Regra">
+                    <h4>3º Regra</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="boxes4">
+                <div class="box4">
+                    <img src="" alt="4º Regra">
+                    <h4>4º Regra</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="boxes5">
+                <div class="box5">
+                    <img src="" alt="5º Regra">
+                    <h4>5º Regra</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <input onchange="tela()" name="" id="procurar_time">
+
+    </div>
+    
+
+    <div class="footer1">
+        <div class="container">
+            <h4>No pain, No Gain &copy; 2021</h4>
+        </div>
+    </div>
+</body>
+
+
+</html>
+
+<script>
+    function tela(){
+        
+        fetch(`https://free-nba.p.rapidapi.com/games/${procurar_time.value}`, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "free-nba.p.rapidapi.com",
+		"x-rapidapi-key": "8ba548a9d0msh25559a4f1054d1ep18b0e8jsn752939f86dbf"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+
+    }
+</script>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AcquaTec | Cadastro</title>
+
+
+    <script src="./js/funcoes.js"></script>
+
+
+    <link rel="icon" href="./assets/icon/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--header inicio-->
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="https://images.squarespace-cdn.com/content/v1/5f217fac8e24187c674282cd/1611423587824-YMOUUJ5NSNHOGPPDDPCG/logocores.jpg?format=1500w" alt="">
+            <ul class="navbar">
+                <li>
+                    <a class="index" href="./index.html">Inicial</a>
+                </li>
+                <li>
+                    <a class="sobrenos" href="./simulador.html">Sobre nós</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a class="login" href="./login.html">Login</a>
+                </li>
+                <li>
+                    <a class="cadastro" href="./cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header fim-->
+
+    <div class="banner-login ">
+        <div class="container ">
+            <div class="card medio">
+                <h2>Bem-vindo!</h2>
+                <div class="formulario">
+                    <div id="form_cadastro">
+                        Nome:
+                        <br>
+                        <input id="nome_input" type="text" placeholder="Ada Lovelace">
+                        <br>
+                        <br>
+                        E-mail:
+                        <br>
+                        <input id="email_input" type="text" placeholder="meuemail@provedor.com">
+                        <br>
+                        <br>
+                        Senha:
+                        <br>
+                        <input id="senha_input" type="password" placeholder="******">
+                        <br>
+                        <br>
+                        Confirmação da Senha:
+                        <br>
+                        <input id="confirmacao_senha_input" type="password" placeholder="******">
+                        <br>
+                        <br>
+                        Time do coração
+                        <br>
+                        <select id="time_do_coracao">
+                            <option value="">Selecione seu time</option>
+                            <option value="Philadelphia 76ers">Philadelphia 76ers</option>
+                            <option value="Boston Celtics">Boston Celtics</option>
+                            <option value="New York Knicks">New York Knicks</option>
+                            <option value="Brooklyn Nets">Brooklyn Nets</option>
+                            <option value="Toronto Raptors">Toronto Raptors</option>
+                            <option value="Chicago Bulls">Chicago Bulls</option>
+                            <option value="Cleveland Cavaliers">Cleveland Cavaliers</option>
+                            <option value="Detroit Pistons">Detroit Pistons</option>
+                            <option value="Indiana Pacers">Indiana Pacers</option>
+                            <option value="Milwaukee Bucks">Milwaukee Bucks</option>
+                            <option value="Charlotte Hornets">Charlotte Hornets</option>
+                            <option value="Atlanta Hawks">Atlanta Hawks</option>
+                            <option value="Miami Heat">Miami Heat</option>
+                            <option value="Orlando Magic">Orlando Magic</option>
+                            <option value="Washington Wizards">Washington Wizards</option>
+                            <option value="Denver Nuggets">Denver Nuggets</option>
+                            <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+                            <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+                            <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+                            <option value="Utah Jazz">Utah Jazz</option>
+                            <option value="Golden State Warriors">Golden State Warriors</option>
+                            <option value="Los Angeles Clippers">Los Angeles Clippers</option>
+                            <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+                            <option value="Phoenix Suns">Phoenix Suns</option>
+                            <option value="Sacramento Kings">Sacramento Kings</option>
+                            <option value="Dallas Mavericks">Dallas Mavericks</option>
+                            <option value="Houston Rockets">Houston Rockets</option>
+                            <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+                            <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+                            <option value="San Antonio Spurs">San Antonio Spurs</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button class="btn" onclick="cadastrar()">Cadastrar</button>
+                    </div>
+                </div>
+                <div id="div_aguardar" class="loading-div">
+                    <img src="./assets/circle-loading.gif" id="loading-gif">
+                </div>
+
+                <div id="div_erros_login">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function cadastrar() {
+
+        aguardar();
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var timeVar = time_do_coracao.value; 
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || timeVar == "") {
+
+            window.alert("Preencha todos os campos para prosseguir!");
+            if (nomeVar == "") {
+                console.log('nome está em branco')
+            }
+            if (emailVar == "") {
+                console.log('email está em branco')
+            }
+            if (senhaVar == "") {
+                console.log('senha está em branco')
+            }
+            if (confirmacaoSenhaVar == "") {
+                console.log('confirmacaoSenha está em branco')
+            }
+            if(timeVar == "") {
+                console.log('timedocoracao está em branco')
+            }
+            finalizarAguardar();
+            return false;
+        }
+
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        }
+
+        if (senhaVar != confirmacaoSenhaVar) {
+            window.alert("As senhas inseridas devem ser iguais para prosseguir!");
+            finalizarAguardar();
+            return false;
+        }
+
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar,
+                timeServer: timeVar,
+                
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+                window.location = "login.html";
+
+                
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+
+    
+</script>
